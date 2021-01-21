@@ -71,3 +71,67 @@ function createCactus() {
 
 createCactus();	
 document.addE('Keyup', handlekeyUp0;   
+
+index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+     <meta charset="UTF-8">
+	 <title>Dino Game</title>
+	 <link real="stylesheet" heaf="style.css"></link>
+	 <script src="script.js" charset="UTF-8" defer></script>
+   </head>
+   <body>
+     <div class="background">
+	   <div class="dino"></div>
+	 </div>
+   </body> 
+   </html>
+
+style.css
+.body{
+	background: #fafafa;
+}
+
+.dino {
+	width: 68pix;
+	height: 68pix;
+	background-image: url(dino.png);
+	position: absolute;
+	bottom: 0;
+}
+
+.cactus {
+	position: absolute;
+	width: 68pix;
+	height: 68pix;
+	bottom: 0;
+	background-image: url(cacutus.png);
+}	
+
+.game-over {
+	text-align: center;
+	color: #666666;
+	margin-top: 50px;
+	font-family: arial;
+}
+
+ @keyframes slideright {
+	 fron { 
+	    background-portrait: 70000%;
+    }		
+	
+	to {
+		background-position: 0;
+	}
+ }
+ 
+.background {
+    position: absolute;
+    bottom: 0;	
+    background-image: url(background.png);
+	animation: slideright 600s infinite linear;
+	width: 100%;
+	height: 200px;
+	
+} 
